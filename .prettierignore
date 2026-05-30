@@ -1,0 +1,13 @@
+# Dependencies
+node_modules
+
+# Build & test output
+dist
+coverage
+
+# Generated lockfile — never reformat
+pnpm-lock.yaml
+
+# Execution-control documents (authored with intentional line wrapping)
+PLAN.md
+docs/specs
