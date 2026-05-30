@@ -39,7 +39,8 @@ Initial alpha release.
 - **Next.js instrumentation recipe** under `examples/nextjs-instrumentation/`
   (instrumentation hook + cassette-switching route + Playwright wiring + the
   `next build && next start` caveat).
-- Dual **ESM + CJS** build with type declarations (tsup), an `exports` map, and a
-  `prepare` script so `pnpm add github:lukasedw/bobina` builds on install.
+- Dual **ESM + CJS** build with type declarations (tsup) and an `exports` map.
+  The built `dist/` is committed so `pnpm add github:lukasedw/bobina` installs
+  with no build step (pnpm 10.26+ blocks git-dependency `prepare` scripts).
 
 [0.1.0]: https://github.com/lukasedw/bobina/releases/tag/v0.1.0

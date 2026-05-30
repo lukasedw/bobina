@@ -42,8 +42,11 @@ Until bobina is published to npm, install it straight from GitHub:
 pnpm add github:lukasedw/bobina
 ```
 
-A `prepare` script builds the package on install, so consumers get a compiled
-`dist/` (ESM + CJS + type declarations) automatically — no extra build step.
+The compiled `dist/` (ESM + CJS + type declarations) is committed to the repo, so
+the install needs **no build step and no extra config**. (This is deliberate:
+pnpm 10.26+ blocks a git dependency's `prepare` build script unless the consumer
+allowlists it, so shipping a prebuilt `dist/` is what keeps the one-line install
+working.)
 
 ## Two API surfaces
 

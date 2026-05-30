@@ -32,7 +32,7 @@
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "prepare": "tsup"
+    "prepublishOnly": "tsup"
   },
   "dependencies": {
     "@mswjs/interceptors": "^0.41.9"

@@ -1,5 +1,8 @@
-# Build output
-/dist
+# Build output.
+# NOTE: /dist is intentionally committed (see README "Install"). pnpm 10.26+
+# blocks a git dependency's `prepare` build script unless the consumer
+# allowlists it, so shipping a prebuilt dist is what makes
+# `pnpm add github:lukasedw/bobina` work with no extra config.
 /out-tsc
 /tmp
 
